@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(
+    to bottom right,
+    #a61e4d,
+    #9c36b5,
+    #862e9c,
+    #7048e8,
+    #5f3dc4
+  );
+  height: 100vh;
+  color: white;
+}
+h1 {
+  font-size: 3rem;
+  font-family: roboto;
+  text-align: center;
+}
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10rem;
+
+  max-width: 90rem;
+  margin: 5rem auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 20rem;
+}
+form input[type="text"],
+input[type="email"] {
+  padding: 1rem 10rem 1rem 1rem;
+  outline: none;
+  font-family: roboto;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+}
+input[type="button"] {
+  padding: 1rem 5rem;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 2rem;
+  border: none;
+  background-color: rgb(40, 9, 70);
+  color: white;
+  border-radius: 2px;
+}
+
+table {
+  font-size: 2rem;
+  font-family: roboto;
+  border-collapse: collapse;
+}
+table tr td,
+th {
+  border: 2px solid white;
+  padding: 1rem;
+  text-align: center;
+}
+table tr {
+  border: 2px solid white;
+}
+
+@media (max-width: 59em) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
